@@ -142,6 +142,7 @@ else{
 
 <nav id="basicInfo">
   <h1>TEST whdnseowkd</h1>
+  <h1>TEST whdnseowkd2</h1>
   <p> 시간 예약하기 </p>
   <form name = "success" method="post" id="send">
     <p> 년 : <input type="text" name ='year' id="year" value = "2017"/></p>
