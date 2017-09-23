@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+  </head>
+  <body>
+    <ul id = "target2">
+      <li id="target">HTML</li>
+      <li>CSS</li>
+    </ul>
+
+    <input type="button" onclick="Append();" value="append">
+    <input type="button" onclick="Insert();" value="insert">
+    <input type="button" onclick="Tdelete();" value="delete">
+
+
+    <script>
+
+    function Tdelete()
+    {
+      var target = document.getElementById('');
+      var t = document.get
+      target.parentNode.removeChild(target);
+    }
+    function Append()
+    {
+      var target = document.getElementById('target');
+      var li = document.createElement('li');
+      var text = document.createTextNode('jQuery');
+      li.appendChild(text); //  tag 완성
+      target.appendChild(li);
+
+    }
+
+    function Insert()
+    {
+      var target = document.getElementById('target');
+      var li = document.createElement("a");
+      var text = document.createTextNode("IOS");
+      li.setAttribute('href','http://www.naver.com');
+      li.appendChild(text);
+      target.insertBefore(li, target.firstChild.nextSibling.nextSibling);
+    }
+    </script>
+
+
+  </body>
+</html>

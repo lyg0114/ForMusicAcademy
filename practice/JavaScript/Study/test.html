@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button get the text content of the button element.</p>
+
+<input type="button" id = "click" onclick="myFunction()" value = "Try it">
+
+<p><strong>Note:</strong> The textContent property is not supported in Internet Explorer 8 and earlier.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+  var x = document.getElementById('click');
+  var demo = document.getElementById('demo');
+  demo.innerHTML += "<p>"+x.value+ "</p>";
+
+}
+
+
+  //target.insertData(start.value, data.value);
+</script>
+
+</body>
+</html>

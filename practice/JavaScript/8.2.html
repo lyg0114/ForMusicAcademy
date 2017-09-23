@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+  </head>
+  <body>
+
+    <ul id="target">
+      <li id="tx">HTML</li>
+      <li class="t">CSS</li>
+    </ul>
+
+    <input type="button" onclick="Append();" value="append">
+    <input type="button" onclick="Insert();" value="insert">
+    <input type="button" onclick="Append2();" value="ap">
+
+
+    <script>
+
+    function Append2()
+    {
+      var target2 = document.getElementById('tx');
+      target2.innerHTML = "<br>asdf</br>"//"<b>e비즈니스</b> 및 <b>IT</b> 전문가를 위한 <font color="navy"><b>지식 미디어</b></font>";
+
+
+
+
+    }
+    function Append()
+    {
+      var target = document.getElementById('target');
+      var li = document.createElement('li');
+      var text = document.createTextNode("jQuery");
+
+      li.appendChild(text); //  tag 완
+      target.appendChild(li);
+
+      var t = document.getElementsByClassName('t');
+/*
+      for(var i=0 ; i<t.length ; i++)
+      {
+        if(t[i].firstChild.nodeValue == "HTML")
+        {
+          t[i].firstChild.nodeValue += li.nodeValue;
+        }
+      }
+*/
+
+
+    }
+
+    function Insert()
+    {
+      var target = document.getElementById('target');
+      var li = document.createElement("li");
+      var text = document.createTextNode("IOS");
+      li.appendChild(text);
+
+      target.insertBefore(li, target.firstChild.nodeValue);
+    }
+    </script>
+
+
+  </body>
+</html>

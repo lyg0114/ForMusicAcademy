@@ -1,0 +1,38 @@
+<ul>
+    <li class="marked">html</li>
+    <li>css</li>
+
+    <li id="active"> JavaScript
+        <ul>
+            <li>JavaScript Core</li>
+            <li class="marked">DOM</li>
+            <li class="marked">BOM</li>
+        </ul>
+    </li>
+
+</ul>
+
+    <li id="javaAct"> Java
+
+    <ul>
+        <li>java1</li>
+        <li class="marked">java2</li>
+        <li class="marked">java3</li>
+    </ul>
+
+  </li>
+  <input id="ck" type="button" value="click" onclick="Aclick();">
+
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+
+  function Aclick()
+    {
+
+      $('#javaAct').css('color','blue').find('.marked').css( "background-color", "red" );
+            $( ".marked", "#active").css( "background-color", "red" );
+
+    }
+
+</script>

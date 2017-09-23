@@ -1,0 +1,39 @@
+<ul>
+    <li class="marked">html</li>
+    <li>css</li>
+    <li id="active"> JavaScript
+        <ul>
+            <li>JavaScript Core</li>
+            <li class="marked">DOM</li>
+            <li class="marked">BOM</li>
+        </ul>
+    </li>
+</ul>
+<script>
+    var list = document.getElementsByClassName('marked');
+    console.group('document');
+    for(var i=0; i<list.length; i++){
+        console.log(list[i].textContent);
+    }
+    console.groupEnd();
+
+    console.group('active');
+    var active = document.getElementById('active');
+    var list = active.getElementsByClassName('marked');
+    for(var i=0; i<list.length; i++){
+      if(list[i].classList == "marked")
+      list[i].setAttribute('id', 'hello');
+        //console.log("check",i);
+    }
+
+    for(var i=0; i<list.length; i++){
+      if(list[i].classList == "marked")
+      list[i].removeAttribute('id', 'hello');
+        //console.log("check",i);
+    }
+
+
+
+
+    console.groupEnd();
+</script>

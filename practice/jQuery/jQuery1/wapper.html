@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul class="foo" id="poo">
+           <li>testt1</li>
+            <li>testt2</li>
+            <li>testt3</li>
+            <li>testt4</li>
+          </ul>
+
+  <ul id = "abc">
+       <li>test1</li>
+       <li>test2</li>
+       <li>test3</li>
+       <li>test4</li>
+       <li>test5</li>
+     </ul>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+            <script type="text/javascript">
+
+                (function($){           
+
+                  $('ul.foo').click( function(){
+                        $('li',this).css('background-color','red');
+                    });
+
+
+                  $('ul#abc').click( function(){
+                        $('li',this).css('background-color','red');
+                    });
+
+              })(jQuery)
+
+            </script>
+  </body>

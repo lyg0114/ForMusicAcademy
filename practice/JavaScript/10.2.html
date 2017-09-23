@@ -1,0 +1,35 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <ol>
+      <li>html</li>
+      <li>css</li>
+      <li id='target'>abc</li>
+    </ol>
+  <input type="button" value="change" onclick="changed();">
+
+  <script>
+
+  function changed()
+  {
+    var Nnode = document.createElement('li');
+    Nnode.appendChild(document.createTextNode('JAVA'));
+
+    var target = document.getElementById('target');
+    target.replaceChild(Nnode, target.firstChild);
+
+
+  }
+
+  </script>
+
+  </body>
+</html>
