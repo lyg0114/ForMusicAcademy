@@ -142,6 +142,7 @@ else{
 
 <nav id="basicInfo">
   <p> 시간 예약하기 </p>
+  <h1> GIT TEST </h1>
   <form name = "success" method="post" id="send">
     <p> 년 : <input type="text" name ='year' id="year" value = "2017"/></p>
     <p> 월 : <select  id="month"  name= 'month'>
