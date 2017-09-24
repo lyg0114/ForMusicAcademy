@@ -243,8 +243,6 @@ var dateString = new Array('sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat');
       var dNum = 1;
       for(var i=1; i<=row; i++){
         calendar+="<tr>";
-
-
         for(var k=1; k<=7; k++){//열 생성 (td 태그 생성)
             /*행이 첫 줄이고 현재 월의 1일의 요일 이전은 모두 빈열로
             표기하고 날짜가 마지막 일보다 크면 빈열로 표기됩니다.*/
@@ -252,25 +250,12 @@ var dateString = new Array('sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat');
               calendar+="<td class='" + dateString[k-1]+"'> &nbsp; </td>"; //이런경우 빈칸
              }
              else{
+              // calendar+= "<td class='" + dateString[k-1]+"' name='day' width='200' height='70'><li>" + dNum + "</li></td>"; //이런경우 날짜 입력
               calendar+= "<td class='" + dateString[k-1]+"' name='day' width='200' height='70'>" + dNum + "</td>"; //이런경우 날짜 입력
                dNum++;
              }
         }
-
-
-      /*for(var k=1; k<=7; k++){
-
-          if(i==1 && k <= theDay || dNum > lastDate){
-            calendar+='<td class="' + dateString[k] + '"> </td>';
-           }
-           else{
-            calendar+= calendar+= '<td name="day" class="' + dateString[j] + '">' + dNum + '</td>';
-            dNum++;
-           }
-         }*/
-
-
-      calendar+="</tr>";
+        calendar+="</tr>";
   }//달력 완성!!
 title.innerHTML = "<h2 id='dayinfo'>"+y+"."+(m+1)+"</h2>";
 kCalendar.innerHTML = calendar;

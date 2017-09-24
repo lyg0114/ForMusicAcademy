@@ -1,2 +1,0 @@
-<h2>javaScript</h2>
-JavaScript는 html을 제어합니다.
