@@ -1,7 +1,22 @@
 
+
+#logo{
+  width:500px;
+    }
+#sayHi{
+
+  list-style: none;
+  list-style: none;
+  font-size: unset;
+  font-style: oblique;
+  font-variant-caps: titling-caps;
+}
+
+/*
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * {font-family: 'Nanum Gothic', serif;}
-
+*/
+/*
 header{
   border-bottom:5px solid gray;
   padding: 40px;
@@ -9,7 +24,9 @@ header{
 header img{
   float:right;
   height: 100px;
-}
+}*/
+/*
+
 #basicInfo{
   padding-left: 250px;
 }
@@ -71,3 +88,5 @@ table td{
 {
   text-align: center;
 }
+
+*/

@@ -8,16 +8,18 @@ if(!isset($_SESSION['is_login'])){
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
-  <link rel="stylesheet" type="text/css" href="http://localhost:8080/MusicAcademy/cal/cal.css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/MusicAcademy/cal/cal.css">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/TwiterBootStrap/style.css">
+  <link href="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-
 <body id="target">
-  <header>
-    <img src="http://cafefiles.naver.net/20160825_43/16904659_1472123606443_SyUH5d_jpg/16904659_user_201326.jpg" alt="생활코딩">
-    <h1><a href="http://localhost:8080/MusicAcademy/cal/cal.php">직장인 음악학원</a></h1>
-    <li id="sayHi">반갑습니다. <?php  echo $_SESSION['name']." ";?> 님</li>
+  <header class="jumbotron text-center">
+      <img  style="width:500px" id="logo" src="http://cafefiles.naver.net/20160825_43/16904659_1472123606443_SyUH5d_jpg/16904659_user_201326.jpg">
+      <h1><a href="http://localhost:8080/MusicAcademy/cal/cal.php">직장인 음악학원</a></h1>
+      <h1 id="sayHi">반갑습니다.<?php  echo $_SESSION['name']." ";?> 님</h1>
   </header>
 
   <nav id="list">
@@ -92,10 +94,17 @@ else{
 
   </form>
 </nav>
+
 <h3 id = "title"></h3>
 <div id="kCalendar"></div>
+
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://localhost:8080/MusicAcademy/cal/cal.js">
-</script>
+<script src="http://localhost:8080/MusicAcademy/cal/cal.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.js"></script>
+
 </body>
 </html>

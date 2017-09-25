@@ -13,8 +13,6 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <link rel="stylesheet" type="text/css" href="http://localhost:8080/TwiterBootStrap/style.css">
 <link href="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
-
-
   </head>
 
 <body id="target">
@@ -60,17 +58,10 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
       </div>
         <a href="http://localhost:8080/TwiterBootStrap/write.php" class ="btn btn-success btn-lg">쓰기</a>
       </div>
-
-
 </div>
 
-
-
-
   </div>
-
-
-  </div>
+    </div>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
