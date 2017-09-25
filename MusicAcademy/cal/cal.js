@@ -50,7 +50,7 @@ function printCalendar() {
       var lastDate=last[m];
       var row=Math.ceil((theDay+lastDate)/7);
       console.log(row);
-      var calendar="<table class='table-striped' border='1' id='cal'>";
+      var calendar="<table border='1' id='cal'>";
         calendar+="<tr>";
       calendar+="<th id='s' class='sun'>일</th>";
       calendar+="<th id='m' class='mon'>월</th>";

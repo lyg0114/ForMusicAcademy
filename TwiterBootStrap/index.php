@@ -52,17 +52,15 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
     </article>
     <hr>
     <div id="control">
-        <div class="btn-group" roel="group" aria-laber="...">
-          <input type="button" value="white" class ="btn btn-default btn-lg" onclick="document.getElementById('target').className='white'"/>
-          <input type="button" value="black" class ="btn btn-default btn-lg" onclick="document.getElementById('target').className='black'" />
-        </div>
+      <div class="btn-group" roel="group" aria-laber="...">
+        <input type="button" value="white" class ="btn btn-default btn-lg" onclick="document.getElementById('target').className='white'"/>
+        <input type="button" value="black" class ="btn btn-default btn-lg" onclick="document.getElementById('target').className='black'" />
+      </div>
         <a href="http://localhost:8080/TwiterBootStrap/write.php" class ="btn btn-success btn-lg">쓰기</a>
       </div>
-    </div>
 </div>
 
-
-
+  </div>
     </div>
 
 
