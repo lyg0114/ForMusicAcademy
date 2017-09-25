@@ -22,6 +22,7 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
     <header class="jumbotron text-center">
     <img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" alt="생활코딩" class="img-circle" id="logo" >
         <h1><a href="http://localhost:8080/TwiterBootStrap/index.php">JavaScript</a></h1>
+        <h1>test</h1>
   </header>
 
   <div class="row">
