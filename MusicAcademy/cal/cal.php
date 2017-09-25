@@ -60,8 +60,6 @@ else{
       print '<li style="display:none" class="DBtime">'.$row['time'].'</li>';
   }
   ?>
-
-
 <nav id="basicInfo">
   <p> 시간 예약하기 </p>
   <form name = "success" method="post" id="send">
@@ -104,7 +102,7 @@ else{
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.js"></script>
+  <script src="http://localhost:8080/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
