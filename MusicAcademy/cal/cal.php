@@ -7,88 +7,11 @@ if(!isset($_SESSION['is_login'])){
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
-
 <head>
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/MusicAcademy/cal/cal.css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<style media="screen">
-
-<style media="screen">
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-* {font-family: 'Nanum Gothic', serif;}
-
-header{
-  border-bottom:5px solid gray;
-  padding: 40px;
-}
-header img{
-  float:right;
-  height: 100px;
-}
-#basicInfo{
-  padding-left: 250px;
-}
-#list{
-    border-right:5px solid gray;
-    width:200px;
-    height:900px;
-    float:left;
-  }
-  #list ol
-  {
-    list-style: none;
-    padding:0;
-
-  }
-  #sayHi{
-    float:right;
-    list-style: none;
-
-    float: left;
-    list-style: none;
-    font-size: unset;
-    font-style: oblique;
-    font-variant-caps: titling-caps;
-}
-table{
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-right-width: 2px;
-}
-table th{
-  height: 40px;
-}
-table td{
-  width : 150px;
-  height: 100px;
-
-
-}
-.sun {text-align:left; color: deeppink;}
-.mon {text-align:left;}
-.tue {text-align:left;}
-.wed {text-align:left;}
-.thu {text-align:left;}
-.fri {text-align:left;}
-.sat {text-align:left; color: deepskyblue;}
-#kCalendar{
-  padding-left: 250px;
-}
-#dayinfo{
-  padding-left: 250px;
-}
-#info{
-  list-style: none;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  border: 2px;
-}
-#s,#m,#t,#w,#th,#f,#sa
-{
-  text-align: center;
-}
-</style>
 </head>
+
 
 <body id="target">
   <header>
@@ -103,9 +26,6 @@ table td{
 
       </ol>
   </nav>
-
-
-
   <?php // 년월에 해당되는 정보를 DB에서 가져옴!!
     $conn = mysqli_connect("localhost", "root", "lyg3716");
     mysqli_select_db($conn, "meminfo");
@@ -166,8 +86,7 @@ else{
       <option id="eight" value="8">8:00</option>
     </select>
   </p>
-
-  <input id ="mon" type="button" value="날짜확인" onclick= 'mySubmit(1)'/>
+<input id ="mon" type="button" value="날짜확인" onclick= 'mySubmit(1)'/>
   <input id ="res" type="button" value="예약하기" onclick= 'mySubmit(2)'/>
   <input id ="del" type="button" value="예약취소" onclick= 'mySubmit(3)'/>
 
@@ -175,7 +94,6 @@ else{
 </nav>
 <h3 id = "title"></h3>
 <div id="kCalendar"></div>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://localhost:8080/MusicAcademy/cal/cal.js">
 </script>

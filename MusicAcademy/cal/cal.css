@@ -1,0 +1,73 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {font-family: 'Nanum Gothic', serif;}
+
+header{
+  border-bottom:5px solid gray;
+  padding: 40px;
+}
+header img{
+  float:right;
+  height: 100px;
+}
+#basicInfo{
+  padding-left: 250px;
+}
+#list{
+    border-right:5px solid gray;
+    width:200px;
+    height:900px;
+    float:left;
+  }
+  #list ol
+  {
+    list-style: none;
+    padding:0;
+
+  }
+  #sayHi{
+    float:right;
+    list-style: none;
+
+    float: left;
+    list-style: none;
+    font-size: unset;
+    font-style: oblique;
+    font-variant-caps: titling-caps;
+}
+table{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+table th{
+  height: 40px;
+}
+table td{
+  width : 150px;
+  height: 100px;
+}
+.sun {text-align:left; color: deeppink;}
+.mon {text-align:left;}
+.tue {text-align:left;}
+.wed {text-align:left;}
+.thu {text-align:left;}
+.fri {text-align:left;}
+.sat {text-align:left; color: deepskyblue;}
+#kCalendar{
+  padding-left: 250px;
+}
+#dayinfo{
+  padding-left: 250px;
+}
+#info{
+  list-style: none;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border: 2px;
+}
+#s,#m,#t,#w,#th,#f,#sa
+{
+  text-align: center;
+}
