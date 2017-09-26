@@ -21,13 +21,6 @@ if(!isset($_SESSION['is_login'])){
       <h1><a href="http://localhost:8080/MusicAcademy/cal/cal.php">직장인 음악학원</a></h1>
       <h1 id="sayHi">반갑습니다.<?php  echo $_SESSION['name']." ";?> 님</h1>
   </header>
-
-  <nav id="list">
-      <ol>
-            <li><a href="http://localhost:8080/MusicAcademy/login/logout.php">로그아웃</a></li>
-
-      </ol>
-  </nav>
   <?php // 년월에 해당되는 정보를 DB에서 가져옴!!
     $conn = mysqli_connect("localhost", "root", "lyg3716");
     mysqli_select_db($conn, "meminfo");
@@ -92,8 +85,10 @@ else{
     <input id ="mon" type="button" value="날짜확인" onclick= 'mySubmit(1)'/>
       <input id ="res" type="button" value="예약하기" onclick= 'mySubmit(2)'/>
       <input id ="del" type="button" value="예약취소" onclick= 'mySubmit(3)'/>
+    </form>
 
-      </form>
+          <li><a href="http://localhost:8080/MusicAcademy/login/logout.php">logOut</a></li>
+
     </nav>
         <h3 id = "title"></h3>
     <div id="calinfo" class="col-md-7" >

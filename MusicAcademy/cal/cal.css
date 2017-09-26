@@ -11,6 +11,37 @@
   font-style: oblique;
   font-variant-caps: titling-caps;
 }
+#logout
+{
+    font-style: oblique;
+}
+
+.sun {text-align:left; color: deeppink;}
+.mon {text-align:left;}
+.tue {text-align:left;}
+.wed {text-align:left;}
+.thu {text-align:left;}
+.fri {text-align:left;}
+.sat {text-align:left; color: deepskyblue;}
+#calinfo
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+
+}
+
+#s,#m,#t,#w,#th,#f,#sa
+{
+  text-align: center;
+}
+
+#basicInfo{
+  padding-left: 30px;
+  padding-top:  62px;
+
+}
+
 
 /*
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -53,22 +84,3 @@ header img{
     font-variant-caps: titling-caps;
 }
 */
-.sun {text-align:left; color: deeppink;}
-.mon {text-align:left;}
-.tue {text-align:left;}
-.wed {text-align:left;}
-.thu {text-align:left;}
-.fri {text-align:left;}
-.sat {text-align:left; color: deepskyblue;}
-#calinfo
-{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-
-}
-
-#s,#m,#t,#w,#th,#f,#sa
-{
-  text-align: center;
-}
