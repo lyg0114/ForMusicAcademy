@@ -13,8 +13,6 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <link rel="stylesheet" type="text/css" href="http://localhost:8080/TwiterBootStrap/style.css">
 <link href="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
-
-
   </head>
 
 <body id="target">
@@ -23,7 +21,7 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
     <header class="jumbotron text-center">
     <img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" alt="생활코딩" class="img-circle" id="logo" >
         <h1><a href="http://localhost:8080/TwiterBootStrap/index.php">JavaScript</a></h1>
-        <h1 id=test>TEST</h1>
+        <h1>test</h1>
   </header>
 
   <div class="row">
@@ -66,14 +64,10 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
     </div>
 
 
-
-
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://localhost:8080/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-
+    <script src="http://localhost:8080/bootstrap-3.3.4-dist/css/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,5 @@
 
-li{
-  list-style: none;
-}
+
 #logo{
   width:500px;
     }
@@ -9,40 +7,11 @@ li{
 
   list-style: none;
   list-style: none;
-  font-size:20px;
+  font-size: unset;
   font-style: oblique;
   font-variant-caps: titling-caps;
 }
 
-.sun {text-align:left; color: deeppink;}
-.mon {text-align:left;}
-.tue {text-align:left;}
-.wed {text-align:left;}
-.thu {text-align:left;}
-.fri {text-align:left;}
-.sat {text-align:left; color: deepskyblue;}
-#calinfo
-{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-
-}
-
-#s,#m,#t,#w,#th,#f,#sa
-{
-  text-align: center;
-}
-
-#logOut{
-  font-size:20px;
-  font-top:63px;
-}
-
-#basicInfo{
-  padding-left: 30px;
-  padding-top: 63px;
-}
 /*
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * {font-family: 'Nanum Gothic', serif;}
@@ -84,3 +53,22 @@ header img{
     font-variant-caps: titling-caps;
 }
 */
+.sun {text-align:left; color: deeppink;}
+.mon {text-align:left;}
+.tue {text-align:left;}
+.wed {text-align:left;}
+.thu {text-align:left;}
+.fri {text-align:left;}
+.sat {text-align:left; color: deepskyblue;}
+#calinfo
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+
+}
+
+#s,#m,#t,#w,#th,#f,#sa
+{
+  text-align: center;
+}
